@@ -123,6 +123,24 @@
             h1 { font-size: 2.5rem; }
             .subtitle { font-size: 1.2rem; }
         }
+
+        .link-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .link {
+            padding: 0.8rem 1.5rem;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid transparent;
+        }
+        .link-outline {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        .link:hover {
+            transform: translateY(5px);
+            box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -145,11 +163,13 @@
         <div class="grid">
             <!-- Project 1 -->
             <div class="card">
-                <a href="https://github.com/kalebpc/windows">Windows things</a>
-                <a href="https://github.com/kalebpc/handbrakecli">HandbrakeCLI</a>
-                <a href="https://github.com/kalebpc/jellyfin">Jellyfin</a>
-                <a href="https://github.com/kalebpc/ImageEdit">Edit Images</a>
-                <a href="https://github.com/kalebpc/home-media-server-build">Home Lab</a>
+                <div class="link-group">
+                    <a href="https://github.com/kalebpc/windows" class="link link-outline">Windows things</a>
+                    <a href="https://github.com/kalebpc/handbrakecli" class="link link-outline">HandbrakeCLI</a>
+                    <a href="https://github.com/kalebpc/jellyfin" class="link link-outline">Jellyfin</a>
+                    <a href="https://github.com/kalebpc/ImageEdit" class="link link-outline">Edit Images</a>
+                    <a href="https://github.com/kalebpc/home-media-server-build" class="link link-outline">Home Lab</a>
+                </div>
             </div>
         </div>
 
